@@ -1,0 +1,29 @@
+{
+  "name": "truffle-yearn-starter",
+  "version": "0.0.1",
+  "description": "Yearn starter for truffle",
+  "main": "truffle.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "lint:prettier": "prettier --write contracts/**/**/**/**/**.sol",
+    "test": "truffle test",
+    "test:coverage": "scripts/coverage.sh",
+    "test:ganache": "truffle test --network ganache",
+    "deploy:ganache": "truffle migrate --reset --network ganache",
+    "deploy:ropsten": "truffle migrate --reset --network infuraRopsten",
+    "verify:ropsten": "truffle run verify StablePay StablePayStorage Settings Vault KyberSwappingProvider UniswapSwappingProvider TransferToPostAction PostActionRegistry Storage Registration CompoundSettings CompoundMintPostAction EtherTransferPostAction --network infuraRopsten",
+    "deploy:rinkeby": "truffle migrate --reset --network infuraRinkeby",
+    "verify:rinkeby": "truffle run verify StablePay StablePayStorage Settings Vault KyberSwappingProvider UniswapSwappingProvider TransferToPostAction PostActionRegistry Storage Registration CompoundSettings CompoundMintPostAction EtherTransferPostAction --network infuraRinkeby",
+    "start:ganache": "ganache-cli --db ./db --accounts 10 --mnemonic 'gesture rather obey video awake genuine patient base soon parrot upset lounge' --networkId 5777 --debug"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "2.5.1",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.47",
+    "truffle-core": "^5.0.34",
+    "truffle-environment": "^0.1.10",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-legacy-system": "^1.0.7",
+    "web3": "^1.3.0"
+  }
+}
