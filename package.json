@@ -9,7 +9,7 @@
     "test": "truffle test",
     "test:ganache": "truffle test --network ganache",
     "deploy:ganache": "truffle migrate --reset --network ganache",
-    "deploy:rinkeby": "truffle migrate --reset --network infuraRinkeby",
+    "deploy:rinkeby": "truffle migrate --reset --network infuraRinkeby"
   },
   "dependencies": {
     "@openzeppelin/contracts": "2.5.1",
