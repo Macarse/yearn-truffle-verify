@@ -7,7 +7,6 @@
     "compile": "truffle compile",
     "lint:prettier": "prettier --write contracts/**/**/**/**/**.sol",
     "test": "truffle test",
-    "test:coverage": "scripts/coverage.sh",
     "test:ganache": "truffle test --network ganache",
     "deploy:ganache": "truffle migrate --reset --network ganache",
     "deploy:rinkeby": "truffle migrate --reset --network infuraRinkeby",
