@@ -10,10 +10,7 @@
     "test:coverage": "scripts/coverage.sh",
     "test:ganache": "truffle test --network ganache",
     "deploy:ganache": "truffle migrate --reset --network ganache",
-    "deploy:ropsten": "truffle migrate --reset --network infuraRopsten",
-    "verify:ropsten": "truffle run verify StablePay StablePayStorage Settings Vault KyberSwappingProvider UniswapSwappingProvider TransferToPostAction PostActionRegistry Storage Registration CompoundSettings CompoundMintPostAction EtherTransferPostAction --network infuraRopsten",
     "deploy:rinkeby": "truffle migrate --reset --network infuraRinkeby",
-    "verify:rinkeby": "truffle run verify StablePay StablePayStorage Settings Vault KyberSwappingProvider UniswapSwappingProvider TransferToPostAction PostActionRegistry Storage Registration CompoundSettings CompoundMintPostAction EtherTransferPostAction --network infuraRinkeby",
     "start:ganache": "ganache-cli --db ./db --accounts 10 --mnemonic 'gesture rather obey video awake genuine patient base soon parrot upset lounge' --networkId 5777 --debug"
   },
   "dependencies": {
