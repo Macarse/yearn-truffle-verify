@@ -109,7 +109,8 @@ module.exports = {
 			},
 			gas: gas,
 			gasPrice: web3.utils.toWei(gasPrice, 'gwei'),
-			network_id: '1'
+			network_id: '1',
+			skipDryRun: false
 		},
 	}
 };
