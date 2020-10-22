@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.5.16;
+pragma solidity >=0.6.0 <0.7.0;
 
 interface Vault {
     function deposit(uint256) external;
