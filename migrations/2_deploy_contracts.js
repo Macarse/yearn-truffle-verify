@@ -1,22 +1,14 @@
-const ControllerInterface = artifacts.require("./interfaces/yearn/IController.sol");
-const StrategyProxy = artifacts.require("./strategies/StrategyProxy");
-const StrategyCurveYBUSDVoterProxy = artifacts.require("./strategies/StrategyCurveYBUSDVoterProxy.sol");
-const StrategyCurveBTCVoterProxy = artifacts.require("./strategies/StrategyCurveBTCVoterProxy.sol");
 
+const StrategyCreamCRV = artifacts.require("./strategies/StrategyCreamCRV.sol");
 
-// NOTE: need to verify this address 
-const CONTROLLER_ADDR = '0x9e65ad11b299ca0abefc2799ddb6314ef2d91080';
+const VAULT = '0xF2E47c29fC9f31Cc50A62dEA24956545772921bc';
 
 module.exports = async function(deployer, network, accounts)  {
   console.log(`Deploying smart contracts to '${network}'.`)
 
   console.log('account 0', accounts[0]);
 
-  const strategyCurveBUSD = await deployer.deploy(StrategyCurveYBUSDVoterProxy, CONTROLLER_ADDR);
+  const strategy = await deployer.deploy(StrategyCreamCRV, VAULT);
 
-  const strategyCurveBTC = await deployer.deploy(StrategyCurveBTCVoterProxy, CONTROLLER_ADDR);
-
-  // const controller = await ControllerInterface.at(CONTROLLER_ADDR);
-
-  // deployer.deploy(StrategyCurveYVoterProxy, controller.address);
+  console.log('Strategy deployed at: ', strategy);
 };

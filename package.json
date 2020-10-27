@@ -14,7 +14,7 @@
     "deploy:mainnet": "truffle migrate --reset --network infuraMainnet"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^3.2.0",
+    "@openzeppelin/contracts": "3.1.0",
     "dotenv": "^8.2.0",
     "truffle": "^5.1.47",
     "truffle-core": "^5.0.34",
