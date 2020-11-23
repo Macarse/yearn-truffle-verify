@@ -8677,9 +8677,10 @@ truffle-migrate@^3.0.32:
     truffle-interface-adapter "^0.2.5"
     web3 "1.2.1"
 
-truffle-plugin-verify@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/truffle-plugin-verify/-/truffle-plugin-verify-0.5.0.tgz#4ac8bc4edb1672c98a77a301a55362c6a7e859a4"
+truffle-plugin-verify@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/truffle-plugin-verify/-/truffle-plugin-verify-0.5.1.tgz#07a23056e682b09605d75f2d67a981e74c59009b"
+  integrity sha512-Rc+tD4WrcxyRYtou6azXcrrjfVKb3q1APgcWYkC+8WOWyh1EEFRF1BQO4DQ8Ljk607yW0fS/w+DRQZfJnE7Skg==
   dependencies:
     axios "0.19.2"
     cli-logger "0.5.40"
